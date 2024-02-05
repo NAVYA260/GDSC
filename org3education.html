@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .containers {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .big-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .organization-details {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .organization-image {
+            max-width: 100%;
+            width: 210px;
+            height: 500px;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            flex: 0 0 48%;
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 15px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hunger Help</div>
+            <ul class="nav-links">
+                <li><a href="WhatToDonate.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Feedback.html">Rating&Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container with Big Card -->
+    <div class="containers">
+
+        <!-- Big Card with Organization Details and Images -->
+        <div class="big-card">
+            <div class="organization-details">
+                <h2>Feedind India Foundation</h2>
+                <p>
+                    Feeding India, a Zomato giveback, is a not for profit organization, designing interventions to
+                    reduce hunger among underserved communities in India. In January 2019, Zomato and Feeding India
+                    (registered as Hunger Heroes) collaborated to eradicate hunger and malnutrition in India.
+                </p>
+                <p>
+                    Despite the significant progress India has made, a large number of people still face the risk of
+                    food insecurity. The COVID-19 pandemic has further exacerbated the challenge of hunger in our
+                    country.
+
+                    As a response to the devastating consequences of the pandemic, Feeding India by Zomato launched the
+
+                    Daily Feeding Program in January 2021
+                    to provide daily meal support to the most vulnerable families.
+
+
+                </p>
+                <p> Under this program, Feeding India has served 4.3+ crore meals with the main focus on reducing hunger
+                    for the most vulnerable. This has been enabled with the support of over 140 NGO partners spread
+                    across 40 cities in the country.</p>
+                <p>ADDRESS and CONTACT NUMBER:
+                <ul>
+                    <li>New Delhi,Delhi and 098711 78810</li>
+                    <li>Bengaluru, Karnataka and 099027 99027</li>
+                    <li>Hazaribagh, Jharkhand and 080927 44870</li>
+                </ul>
+                </p>
+                <br>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms-checkbox" onchange="toggleProceedButton()">
+                    <label for="terms-checkbox">By accessing and using our educational services, you agree to abide by
+                        the terms and conditions outlined herein, including eligibility criteria, non-discrimination
+                        policies,
+                        and any modifications that may be made. We provide these educational resources for free to
+                        eligible individuals,
+                        and your commitment to using these resources responsibly and for educational purposes is
+                        appreciated.
+                        For further details on privacy, intellectual property rights, liability, termination, and other
+                        aspects,
+                        please carefully review our complete terms and conditions. Your continued use of our services
+                        implies your
+                        acceptance of these <u>terms and conditions.</u>
+                    </label>
+                </div>
+            </div>
+            <div class="organization-images">
+                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/cambodia-student-reads-class.jpg?VersionId=LUBlVqllFJTM1BsfVUahBVVUZqEZG3u3&itok=9__XNX41"
+                    alt="Organization 1" class="organization-image" height="500px">
+                <!-- Placeholder image, replace with actual image source -->
+            </div>
+        </div>
+
+        <!-- Button in the Right-End Corner -->
+        <div class="button-container">
+            <a href="AfterProceedEdu.html" class="action-button" id="proceed-button" disabled>Proceed</a>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleProceedButton() {
+            var checkbox = document.getElementById("terms-checkbox");
+            var proceedButton = document.getElementById("proceed-button");
+
+            // Enable the Proceed button if the checkbox is checked, otherwise disable it
+            proceedButton.disabled = !checkbox.checked;
+            proceedButton.style.opacity = checkbox.checked ? 1 : 0.5;
+        }
+
+        function showTerms() {
+            var termsContent = document.getElementById("terms-content");
+
+            // Toggle the display of terms content
+            termsContent.style.display = termsContent.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+
+</body>
+
+</html>

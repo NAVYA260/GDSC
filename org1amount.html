@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#333;
+        }
+
+       
+
+        .containers {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .big-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .organization-details {
+            flex: 1; /* Takes up the remaining space */
+            padding-right: 20px;
+        }
+
+        .organization-image {
+            max-width: 100%;
+            width:200px;
+            height:400px;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            flex: 0 0 48%; 
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 15px; 
+            text-align: center;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            /* Green background color for the navbar */
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            /* Full viewport height */
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hunger Help</div>
+            <ul class="nav-links">
+                <li><a href="WhatToDonate.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Feedback.html">Rating&Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container with Big Card -->
+    <div class="containers">
+
+        <!-- Big Card with Organization Details and Images -->
+        <div class="big-card">
+            <div class="organization-details">
+                <h2>Akshaya Patra Foundation</h2>
+                <p>
+                    The Akshaya Patra Foundation is a not-for-profit organisation headquartered 
+                    in Bengaluru, India. The Foundation strives to eliminate classroom hunger by implementing 
+                    the PM POSHAN (Mid-Day Meal ) Programme. It provides nutritious meals to children studying 
+                    in government schools and government-aided schools. Akshaya Patra also aims to counter malnutrition and 
+                    support the Right to Education of children hailing from socio-economically challenging backgrounds.
+                </p>
+                <p>
+                    It is our firm belief that investing in child nutrition and education is one of the most effective
+                     entry points for human development. Driven by this belief, we strive to provide children with a hot, 
+                     nutritious and tasty mid-day meal every school day as an incentive to come to school. Thus, the vision – 
+                    ‘No child in India shall be deprived of education because of hunger.’
+                </p>
+                <p> Currently, we serve over 2 million children studying in 24,082 government and government-aided 
+                    schools and Anganwadi centres across 72 locations in 16 states and 2 union territories of India.</p>
+                    <p>ADDRESS:No. 72, 3rd Floor, 3rd Main Road, 1st & 2nd Stage
+                        Yeshwantpur Industrial Suburb, Rajajinagar Ward No. 10
+                        Bangalore - 560022
+                        Karnataka, India</p>
+                    <p>CONTACT NUMBER:+91 80 3014 3400</p>
+            </div>
+            <div class="organization-images">
+                <img src="https://ips-dc.org/wp-content/uploads/2022/07/money-going-into-a-savings-jar.jpeg" alt="Organization 1" class="organization-image" height="500px">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <!-- Button in the Right-End Corner -->
+        <div class="button-container">
+            <a href="AmountTransfer.html" class="action-button">Make Payment</a>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>

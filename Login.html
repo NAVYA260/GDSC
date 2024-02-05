@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hunger Help - Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #4CAF50;
+            /* Green background color for the navbar */
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            /* Full viewport height */
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .registration-box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 45%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .password-input {
+            margin-bottom: 50px; /* Adjust this value as needed */
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 20px; /* Adjust this value as needed */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .login-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 13px 260px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none; /* Added this line to remove underline */
+        }
+
+        .login-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hunger Help</div>
+            <ul class="nav-links">
+                <li><a href="First.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Feedback.html">Rating&Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Inside the #organization-box -->
+        <div class="registration-box" id="organization-box">
+            <h2>Organization Registration</h2>
+            <form action="#" method="post" id="organization-form">
+                <label for="org-email">Email:</label>
+                <input type="email" id="org-email" name="org-email" required placeholder="Enter email"><br />
+
+                <label for="org-password">Password:</label>
+                <input type="password" id="org-password" name="org-password" required
+                    placeholder="Enter password" class="password-input"><br />
+
+                <div class="login-container">
+                    <a href="OrgLogin.html" class="login-button">Login</a>
+                </div>
+            </form>
+        </div>
+        <!-- Inside the #donator-box -->
+        <div class="registration-box" id="donator-box">
+            <h2>Donator Registration</h2>
+            <form action="#" method="post" id="donator-form">
+
+                <label for="donor-email">Email:</label>
+                <input type="email" id="donor-email" name="donor-email" required placeholder="Enter email"><br />
+
+                <label for="donor-password">Password:</label>
+                <input type="password" id="donor-password" name="donor-password" required
+                    placeholder="Enter password" class="password-input"><br />
+
+                <div class="login-container">
+                    <a href="WhatToDonate.html" class="login-button">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .containers {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .big-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .organization-details {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .organization-image {
+            max-width: 100%;
+            width: 200px;
+            height: 480px;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            flex: 0 0 48%;
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 15px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hunger Help</div>
+            <ul class="nav-links">
+                <li><a href="WhatToDonate.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Feedback.html">Rating&Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container with Big Card -->
+    <div class="containers">
+
+        <!-- Big Card with Organization Details and Images -->
+        <div class="big-card">
+            <div class="organization-details">
+                <h2>Akshaya Patra Foundation</h2>
+                <p>
+                    The Akshaya Patra Foundation is a not-for-profit organisation headquartered
+                    in Bengaluru, India. The Foundation strives to eliminate classroom hunger by implementing
+                    the PM POSHAN (Mid-Day Meal) Programme. It provides nutritious meals to children studying
+                    in government schools and government-aided schools. Akshaya Patra also aims to counter malnutrition and
+                    support the Right to Education of children hailing from socio-economically challenging backgrounds.
+                </p>
+                <p>
+                    It is our firm belief that investing in child nutrition and education is one of the most effective
+                    entry points for human development. Driven by this belief, we strive to provide children with a hot,
+                    nutritious and tasty mid-day meal every school day as an incentive to come to school. Thus, the vision –
+                    ‘No child in India shall be deprived of education because of hunger.’
+                </p>
+                <p> Currently, we serve over 2 million children studying in 24,082 government and government-aided
+                    schools and Anganwadi centres across 72 locations in 16 states and 2 union territories of India.</p>
+                    <p>ADDRESS:No. 72, 3rd Floor, 3rd Main Road, 1st & 2nd Stage
+                        Yeshwantpur Industrial Suburb, Rajajinagar Ward No. 10
+                        Bangalore - 560022
+                        Karnataka, India</p>
+                    <p>CONTACT NUMBER:+91 80 3014 3400</p>
+                <br>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms-checkbox" onchange="toggleProceedButton()">
+                    <label for="terms-checkbox">By accessing and using our educational services, you agree to abide by
+                        the terms and conditions outlined herein, including eligibility criteria, non-discrimination policies,
+                        and any modifications that may be made. We provide these educational resources for free to eligible individuals,
+                        and your commitment to using these resources responsibly and for educational purposes is appreciated.
+                        For further details on privacy, intellectual property rights, liability, termination, and other aspects,
+                        please carefully review our complete terms and conditions. Your continued use of our services implies your
+                        acceptance of these <u>terms and conditions.</u>
+                    </label>
+                </div>
+            </div>
+            <div class="organization-images">
+                <img src="https://media.istockphoto.com/id/636215476/photo/african-little-girls-are-learning-english-language-orphanage-in-kenya.jpg?s=612x612&w=0&k=20&c=Rt_LOqh_y2NPgUNtN47PBIOK_dC2Na_2DHRlsa8vqck=" alt="Organization 1" class="organization-image" height="500px">
+                <!-- Placeholder image, replace with actual image source -->
+            </div>
+        </div>
+
+        <!-- Button in the Right-End Corner -->
+        <div class="button-container">
+            <a href="AfterProceedEdu.html" class="action-button" id="proceed-button" disabled>Proceed</a>
+        </div>
+
+    </div>
+    <script>
+        function toggleProceedButton() {
+            var checkbox = document.getElementById("terms-checkbox");
+            var proceedButton = document.getElementById("proceed-button");
+
+            // Enable the Proceed button if the checkbox is checked, otherwise disable it
+            proceedButton.disabled = !checkbox.checked;
+            proceedButton.style.opacity = checkbox.checked ? 1 : 0.5;
+        }
+
+        function showTerms() {
+            var termsContent = document.getElementById("terms-content");
+
+            // Toggle the display of terms content
+            termsContent.style.display = termsContent.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>

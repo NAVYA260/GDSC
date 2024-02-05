@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .container1 {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .organization-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .organization-image {
+            max-width: 100%;
+            height: 200px;
+            width: 600px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #333;
+            width: 50px;
+            color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            /* Green background color for the navbar */
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            /* Full viewport height */
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .Donatebutton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #45a049;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: auto; /* This pushes the button to the bottom of the container */
+        }
+
+        .Donatebutton:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hunger Help</div>
+            <ul class="nav-links">
+                <li><a href="WhatToDonate.html">Home</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Feedback.html">Rating&Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container with Organization Cards -->
+    <div class="container1">
+
+        <!-- Organization Card 1 -->
+        <div class="organization-card">
+            <h2>Akshaya Patra Foundation</h2>
+            <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQM1gDmjpexxCvUnJJUVqxrhBHULULUgF8PYXvzwg=s900-c-k-c0x00ffffff-no-rj" alt="Organization 1" class="organization-image">
+            <a href="org1education.html" class="Donatebutton">More</a>
+        </div>
+
+        <!-- Organization Card 2 -->
+        <div class="organization-card">
+            <h2>Deepalaya Foundation</h2>
+            <img src="https://content.jdmagicbox.com/comp/delhi/k5/011pxx11.xx11.110307170845.v6k5/catalogue/deepalaya-corporate-office-janakpuri-delhi-ngos-q3jzxarr2t-250.jpg" alt="Organization 2" class="organization-image">
+            <a href="org2education.html" class="Donatebutton">More</a>
+        </div>
+
+        <div class="organization-card">
+            <h2>Feeding India Foundation</h2>
+            <img src="https://media.licdn.com/dms/image/C4D03AQHag2GiDcOoPQ/profile-displayphoto-shrink_800_800/0/1598976463645?e=2147483647&v=beta&t=J5d50jg_eEFsfQn0NayEYRDb6WpP3-VDFhnKFSqkLkA" alt="Organization 2" class="organization-image">
+            <a href="org3education.html" class="Donatebutton">More</a>
+        </div>
+
+        <!-- Add more organization cards as needed -->
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hunger Help - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: white;
+            background-image: url('https://bbsat.files.wordpress.com/2012/01/img_40201.jpg');
+            background-size: 100%; /* Adjusted background-size property */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .homepage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color:black
+        }
+
+        .introduction {
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .register-button,
+        .login-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .register-button:hover,
+        .login-button:hover {
+            background-color: #45a049;
+        }
+        p {
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="homepage">
+        <div class="logo">Hunger Help</div>
+        <div class="introduction">
+            <p>Welcome to Hunger Help, where we connect donors with organizations to fight hunger and education and make a positive
+                impact on the world. Join us in our mission to make a difference!</p>
+        </div>
+        <div class="buttons-container">
+            <a href="register.html" class="register-button">Register</a>
+            <a href="login.html" class="login-button">Login</a>
+        </div>
+    </div>
+</body>
+
+</html>
